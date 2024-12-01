@@ -2,8 +2,8 @@
 <html>
  <head>
    <link rel="stylesheet" href="style.css">
-   <title>Movie Buddy</title>
-   <script src="myscripts.js"></script>
+   <title>MovieBuddy</title>
+   <script src="app.js"></script>
 
    <!-- font -->
    <link href="https://fonts.cdnfonts.com/css/black-chancery" rel="stylesheet">
@@ -19,61 +19,335 @@
 
            <!-- First movie selection -->
            <select class="selectLikedMovie">
-             <option value="null" disabled>Choose option</option>
-             <option value="12 Angry Men">12 Angry Men</option>
-             <option value="1917">1917</option>
-             <option value="A Star Is Born">A Star Is Born</option>
-             <option value="Aladdin">Aladdin</option>
-             <option value="American Fiction">American Fiction</option>
-             <option value="Arrival">Arrival</option>
-             <option value="Asteroid City">Asteroid City</option>
-             <option value="Avengers: Endgame">Avengers: Endgame</option>
-             <option value="Big Hero 6">Big Hero 6</option>
-             <option value="Black Panther">Black Panther</option>
-             <!-- Add more options here as needed -->
+            <option value="null" disabled>Choose option</option>
+            <option value="12 Angry Men">12 Angry Men</option>
+            <option value="1917">1917</option>
+            <option value="A Star Is Born">A Star Is Born</option>
+            <option value="Aladdin">Aladdin</option>
+            <option value="American Fiction">American Fiction</option>
+            <option value="Arrival">Arrival</option>
+            <option value="Asteroid City">Asteroid City</option>
+            <option value="Avengers: Endgame">Avengers: Endgame</option>
+            <option value="Big Hero 6">Big Hero 6</option>
+            <option value="Black Panther">Black Panther</option>
+            <option value="Bones and All">Bones and All</option>
+            <option value="Braveheart">Braveheart</option>
+            <option value="Bullet Train">Bullet Train</option>
+            <option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+            <option value="Coraline">Coraline</option>
+            <option value="Deadpool">Deadpool</option>
+            <option value="Divergent">Divergent</option>
+            <option value="Don't Look Up">Don't Look Up</option>
+            <option value="Dune">Dune</option>
+            <option value="Everything Everywhere All At Once">Everything Everywhere All At Once</option>
+            <option value="Finding Nemo">Finding Nemo</option>
+            <option value="Forrest Gump">Forrest Gump</option>
+            <option value="Furiosa: A Mad Max Saga">Furiosa: A Mad Max Saga</option>
+            <option value="Gladiator">Gladiator</option>
+            <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+            <option value="Harry Potter and the Deathly Hallows: Part 2">Harry Potter and the Deathly Hallows: Part 2</option>
+            <option value="Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+            <option value="How to Train Your Dragon">How to Train Your Dragon</option>
+            <option value="Ice Age">Ice Age</option>
+            <option value="Inception">Inception</option>
+            <option value="Inside Out">Inside Out</option>
+            <option value="Interstellar">Interstellar</option>
+            <option value="Interview with the Vampire">Interview with the Vampire</option>
+            <option value="Jennifer's Body">Jennifer's Body</option>
+            <option value="Joker">Joker</option>
+            <option value="Jurassic Park">Jurassic Park</option>
+            <option value="Kung Fu Panda">Kung Fu Panda</option>
+            <option value="La La Land">La La Land</option>
+            <option value="Lady Bird">Lady Bird</option>
+            <option value="Legally Blonde">Legally Blonde</option>
+            <option value="Les Misérables">Les Misérables</option>
+            <option value="Love, Simon">Love, Simon</option>
+            <option value="Men in Black">Men in Black</option>
+            <option value="Midsommar">Midsommar</option>
+            <option value="Minions">Minions</option>
+            <option value="Monsters, Inc.">Monsters, Inc.</option>
+            <option value="Mr. and Mrs. Smith">Mr. and Mrs. Smith</option>
+            <option value="No Time to Die">No Time to Die</option>
+            <option value="Nope">Nope</option>
+            <option value="Oppenheimer">Oppenheimer</option>
+            <option value="Parasite">Parasite</option>
+            <option value="Pearl">Pearl</option>
+            <option value="Poor Things">Poor Things</option>
+            <option value="Pride and Predjudice">Pride and Predjudice</option>
+            <option value="Pulp Fiction">Pulp Fiction</option>
+            <option value="Ratatouille">Ratatouille</option>
+            <option value="Renfield">Renfield</option>
+            <option value="Saving Private Ryan">Saving Private Ryan</option>
+            <option value="Schindler's List">Schindler's List</option>
+            <option value="Scott Pilgrim vs. The World">Scott Pilgrim vs. The World</option>
+            <option value="Shang-Chi and the Legend of the Ten Rings">Shang-Chi and the Legend of the Ten Rings</option>
+            <option value="She's the Man">She's the Man</option>
+            <option value="Shrek">Shrek</option>
+            <option value="Soul">Soul</option>
+            <option value="Spider-Man: Into the Spider-Verse">Spider-Man: Into the Spider-Verse</option>
+            <option value="Spirited Away">Spirited Away</option>
+            <option value="Star Wars: Episode IV - A New Hope">Star Wars: Episode IV - A New Hope</option>
+            <option value="Star Wars: Episode V - The Empire Strikes Back">Star Wars: Episode V - The Empire Strikes Back</option>
+            <option value="Star Wars: Episode VI - Return of the Jedi">Star Wars: Episode VI - Return of the Jedi</option>
+            <option value="The Batman">The Batman</option>
+            <option value="The Dark Knight">The Dark Knight</option>
+            <option value="The Departed">The Departed</option>
+            <option value="The Fault in Our Stars">The Fault in Our Stars</option>
+            <option value="The French Dispatch">The French Dispatch</option>
+            <option value="The Godfather">The Godfather</option>
+            <option value="The Greatest Showman">The Greatest Showman</option>
+            <option value="The Green Mile">The Green Mile</option>
+            <option value="The Hunger Games">The Hunger Games</option>
+            <option value="The Imitation Game">The Imitation Game</option>
+            <option value="The Incredibles">The Incredibles</option>
+            <option value="The Lego Batman Movie">The Lego Batman Movie</option>
+            <option value="The Lego Movie">The Lego Movie</option>
+            <option value="The Lord of the Rings: The Fellowship of the Ring">The Lord of the Rings: The Fellowship of the Ring</option>
+            <option value="The Maze Runner">The Maze Runner</option>
+            <option value="The Matrix">The Matrix</option>
+            <option value="The Princess Diaries">The Princess Diaries</option>
+            <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+            <option value="The Silence of the Lambs">The Silence of the Lambs</option>
+            <option value="The Social Network">The Social Network</option>
+            <option value="The Sound of Music">The Sound of Music</option>
+            <option value="The Suicide Squad">The Suicide Squad</option>
+            <option value="The Twilight Saga: Breaking Dawn - Part 2">The Twilight Saga: Breaking Dawn - Part 2</option>
+            <option value="The Wolf of Wall Street">The Wolf of Wall Street</option>
+            <option value="Titanic">Titanic</option>
+            <option value="To All The Boys I Loved Before">To All The Boys I Loved Before</option>
+            <option value="Toy Story">Toy Story</option>
+            <option value="Up">Up</option>
+            <option value="X-Men: Days of Future Past">X-Men: Days of Future Past</option>
            </select>
            
            <br><br>
            
            <!-- Second movie selection -->
            <select class="selectLikedMovie">
-             <option value="null" disabled>Choose option</option>
-             <option value="12 Angry Men">12 Angry Men</option>
-             <option value="1917">1917</option>
-             <option value="A Star Is Born">A Star Is Born</option>
-             <option value="Aladdin">Aladdin</option>
-             <option value="American Fiction">American Fiction</option>
-             <option value="Arrival">Arrival</option>
-             <option value="Asteroid City">Asteroid City</option>
-             <option value="Avengers: Endgame">Avengers: Endgame</option>
-             <option value="Big Hero 6">Big Hero 6</option>
-             <option value="Black Panther">Black Panther</option>
-             <!-- Add more options here as needed -->
+            <option value="null" disabled>Choose option</option>
+            <option value="12 Angry Men">12 Angry Men</option>
+            <option value="1917">1917</option>
+            <option value="A Star Is Born">A Star Is Born</option>
+            <option value="Aladdin">Aladdin</option>
+            <option value="American Fiction">American Fiction</option>
+            <option value="Arrival">Arrival</option>
+            <option value="Asteroid City">Asteroid City</option>
+            <option value="Avengers: Endgame">Avengers: Endgame</option>
+            <option value="Big Hero 6">Big Hero 6</option>
+            <option value="Black Panther">Black Panther</option>
+            <option value="Bones and All">Bones and All</option>
+            <option value="Braveheart">Braveheart</option>
+            <option value="Bullet Train">Bullet Train</option>
+            <option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+            <option value="Coraline">Coraline</option>
+            <option value="Deadpool">Deadpool</option>
+            <option value="Divergent">Divergent</option>
+            <option value="Don't Look Up">Don't Look Up</option>
+            <option value="Dune">Dune</option>
+            <option value="Everything Everywhere All At Once">Everything Everywhere All At Once</option>
+            <option value="Finding Nemo">Finding Nemo</option>
+            <option value="Forrest Gump">Forrest Gump</option>
+            <option value="Furiosa: A Mad Max Saga">Furiosa: A Mad Max Saga</option>
+            <option value="Gladiator">Gladiator</option>
+            <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+            <option value="Harry Potter and the Deathly Hallows: Part 2">Harry Potter and the Deathly Hallows: Part 2</option>
+            <option value="Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+            <option value="How to Train Your Dragon">How to Train Your Dragon</option>
+            <option value="Ice Age">Ice Age</option>
+            <option value="Inception">Inception</option>
+            <option value="Inside Out">Inside Out</option>
+            <option value="Interstellar">Interstellar</option>
+            <option value="Interview with the Vampire">Interview with the Vampire</option>
+            <option value="Jennifer's Body">Jennifer's Body</option>
+            <option value="Joker">Joker</option>
+            <option value="Jurassic Park">Jurassic Park</option>
+            <option value="Kung Fu Panda">Kung Fu Panda</option>
+            <option value="La La Land">La La Land</option>
+            <option value="Lady Bird">Lady Bird</option>
+            <option value="Legally Blonde">Legally Blonde</option>
+            <option value="Les Misérables">Les Misérables</option>
+            <option value="Love, Simon">Love, Simon</option>
+            <option value="Men in Black">Men in Black</option>
+            <option value="Midsommar">Midsommar</option>
+            <option value="Minions">Minions</option>
+            <option value="Monsters, Inc.">Monsters, Inc.</option>
+            <option value="Mr. and Mrs. Smith">Mr. and Mrs. Smith</option>
+            <option value="No Time to Die">No Time to Die</option>
+            <option value="Nope">Nope</option>
+            <option value="Oppenheimer">Oppenheimer</option>
+            <option value="Parasite">Parasite</option>
+            <option value="Pearl">Pearl</option>
+            <option value="Poor Things">Poor Things</option>
+            <option value="Pride and Predjudice">Pride and Predjudice</option>
+            <option value="Pulp Fiction">Pulp Fiction</option>
+            <option value="Ratatouille">Ratatouille</option>
+            <option value="Renfield">Renfield</option>
+            <option value="Saving Private Ryan">Saving Private Ryan</option>
+            <option value="Schindler's List">Schindler's List</option>
+            <option value="Scott Pilgrim vs. The World">Scott Pilgrim vs. The World</option>
+            <option value="Shang-Chi and the Legend of the Ten Rings">Shang-Chi and the Legend of the Ten Rings</option>
+            <option value="She's the Man">She's the Man</option>
+            <option value="Shrek">Shrek</option>
+            <option value="Soul">Soul</option>
+            <option value="Spider-Man: Into the Spider-Verse">Spider-Man: Into the Spider-Verse</option>
+            <option value="Spirited Away">Spirited Away</option>
+            <option value="Star Wars: Episode IV - A New Hope">Star Wars: Episode IV - A New Hope</option>
+            <option value="Star Wars: Episode V - The Empire Strikes Back">Star Wars: Episode V - The Empire Strikes Back</option>
+            <option value="Star Wars: Episode VI - Return of the Jedi">Star Wars: Episode VI - Return of the Jedi</option>
+            <option value="The Batman">The Batman</option>
+            <option value="The Dark Knight">The Dark Knight</option>
+            <option value="The Departed">The Departed</option>
+            <option value="The Fault in Our Stars">The Fault in Our Stars</option>
+            <option value="The French Dispatch">The French Dispatch</option>
+            <option value="The Godfather">The Godfather</option>
+            <option value="The Greatest Showman">The Greatest Showman</option>
+            <option value="The Green Mile">The Green Mile</option>
+            <option value="The Hunger Games">The Hunger Games</option>
+            <option value="The Imitation Game">The Imitation Game</option>
+            <option value="The Incredibles">The Incredibles</option>
+            <option value="The Lego Batman Movie">The Lego Batman Movie</option>
+            <option value="The Lego Movie">The Lego Movie</option>
+            <option value="The Lord of the Rings: The Fellowship of the Ring">The Lord of the Rings: The Fellowship of the Ring</option>
+            <option value="The Maze Runner">The Maze Runner</option>
+            <option value="The Matrix">The Matrix</option>
+            <option value="The Princess Diaries">The Princess Diaries</option>
+            <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+            <option value="The Silence of the Lambs">The Silence of the Lambs</option>
+            <option value="The Social Network">The Social Network</option>
+            <option value="The Sound of Music">The Sound of Music</option>
+            <option value="The Suicide Squad">The Suicide Squad</option>
+            <option value="The Twilight Saga: Breaking Dawn - Part 2">The Twilight Saga: Breaking Dawn - Part 2</option>
+            <option value="The Wolf of Wall Street">The Wolf of Wall Street</option>
+            <option value="Titanic">Titanic</option>
+            <option value="To All The Boys I Loved Before">To All The Boys I Loved Before</option>
+            <option value="Toy Story">Toy Story</option>
+            <option value="Up">Up</option>
+            <option value="X-Men: Days of Future Past">X-Men: Days of Future Past</option>
            </select>
            
            <br><br>
            
            <!-- Third movie selection -->
            <select class="selectLikedMovie">
-             <option value="null" disabled>Choose option</option>
-             <option value="12 Angry Men">12 Angry Men</option>
-             <option value="1917">1917</option>
-             <option value="A Star Is Born">A Star Is Born</option>
-             <option value="Aladdin">Aladdin</option>
-             <option value="American Fiction">American Fiction</option>
-             <option value="Arrival">Arrival</option>
-             <option value="Asteroid City">Asteroid City</option>
-             <option value="Avengers: Endgame">Avengers: Endgame</option>
-             <option value="Big Hero 6">Big Hero 6</option>
-             <option value="Black Panther">Black Panther</option>
-             <!-- Add more options here as needed -->
+            <option value="null" disabled>Choose option</option>
+            <option value="12 Angry Men">12 Angry Men</option>
+            <option value="1917">1917</option>
+            <option value="A Star Is Born">A Star Is Born</option>
+            <option value="Aladdin">Aladdin</option>
+            <option value="American Fiction">American Fiction</option>
+            <option value="Arrival">Arrival</option>
+            <option value="Asteroid City">Asteroid City</option>
+            <option value="Avengers: Endgame">Avengers: Endgame</option>
+            <option value="Big Hero 6">Big Hero 6</option>
+            <option value="Black Panther">Black Panther</option>
+            <option value="Bones and All">Bones and All</option>
+            <option value="Braveheart">Braveheart</option>
+            <option value="Bullet Train">Bullet Train</option>
+            <option value="Captain America: The Winter Soldier">Captain America: The Winter Soldier</option>
+            <option value="Coraline">Coraline</option>
+            <option value="Deadpool">Deadpool</option>
+            <option value="Divergent">Divergent</option>
+            <option value="Don't Look Up">Don't Look Up</option>
+            <option value="Dune">Dune</option>
+            <option value="Everything Everywhere All At Once">Everything Everywhere All At Once</option>
+            <option value="Finding Nemo">Finding Nemo</option>
+            <option value="Forrest Gump">Forrest Gump</option>
+            <option value="Furiosa: A Mad Max Saga">Furiosa: A Mad Max Saga</option>
+            <option value="Gladiator">Gladiator</option>
+            <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+            <option value="Harry Potter and the Deathly Hallows: Part 2">Harry Potter and the Deathly Hallows: Part 2</option>
+            <option value="Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+            <option value="How to Train Your Dragon">How to Train Your Dragon</option>
+            <option value="Ice Age">Ice Age</option>
+            <option value="Inception">Inception</option>
+            <option value="Inside Out">Inside Out</option>
+            <option value="Interstellar">Interstellar</option>
+            <option value="Interview with the Vampire">Interview with the Vampire</option>
+            <option value="Jennifer's Body">Jennifer's Body</option>
+            <option value="Joker">Joker</option>
+            <option value="Jurassic Park">Jurassic Park</option>
+            <option value="Kung Fu Panda">Kung Fu Panda</option>
+            <option value="La La Land">La La Land</option>
+            <option value="Lady Bird">Lady Bird</option>
+            <option value="Legally Blonde">Legally Blonde</option>
+            <option value="Les Misérables">Les Misérables</option>
+            <option value="Love, Simon">Love, Simon</option>
+            <option value="Men in Black">Men in Black</option>
+            <option value="Midsommar">Midsommar</option>
+            <option value="Minions">Minions</option>
+            <option value="Monsters, Inc.">Monsters, Inc.</option>
+            <option value="Mr. and Mrs. Smith">Mr. and Mrs. Smith</option>
+            <option value="No Time to Die">No Time to Die</option>
+            <option value="Nope">Nope</option>
+            <option value="Oppenheimer">Oppenheimer</option>
+            <option value="Parasite">Parasite</option>
+            <option value="Pearl">Pearl</option>
+            <option value="Poor Things">Poor Things</option>
+            <option value="Pride and Predjudice">Pride and Predjudice</option>
+            <option value="Pulp Fiction">Pulp Fiction</option>
+            <option value="Ratatouille">Ratatouille</option>
+            <option value="Renfield">Renfield</option>
+            <option value="Saving Private Ryan">Saving Private Ryan</option>
+            <option value="Schindler's List">Schindler's List</option>
+            <option value="Scott Pilgrim vs. The World">Scott Pilgrim vs. The World</option>
+            <option value="Shang-Chi and the Legend of the Ten Rings">Shang-Chi and the Legend of the Ten Rings</option>
+            <option value="She's the Man">She's the Man</option>
+            <option value="Shrek">Shrek</option>
+            <option value="Soul">Soul</option>
+            <option value="Spider-Man: Into the Spider-Verse">Spider-Man: Into the Spider-Verse</option>
+            <option value="Spirited Away">Spirited Away</option>
+            <option value="Star Wars: Episode IV - A New Hope">Star Wars: Episode IV - A New Hope</option>
+            <option value="Star Wars: Episode V - The Empire Strikes Back">Star Wars: Episode V - The Empire Strikes Back</option>
+            <option value="Star Wars: Episode VI - Return of the Jedi">Star Wars: Episode VI - Return of the Jedi</option>
+            <option value="The Batman">The Batman</option>
+            <option value="The Dark Knight">The Dark Knight</option>
+            <option value="The Departed">The Departed</option>
+            <option value="The Fault in Our Stars">The Fault in Our Stars</option>
+            <option value="The French Dispatch">The French Dispatch</option>
+            <option value="The Godfather">The Godfather</option>
+            <option value="The Greatest Showman">The Greatest Showman</option>
+            <option value="The Green Mile">The Green Mile</option>
+            <option value="The Hunger Games">The Hunger Games</option>
+            <option value="The Imitation Game">The Imitation Game</option>
+            <option value="The Incredibles">The Incredibles</option>
+            <option value="The Lego Batman Movie">The Lego Batman Movie</option>
+            <option value="The Lego Movie">The Lego Movie</option>
+            <option value="The Lord of the Rings: The Fellowship of the Ring">The Lord of the Rings: The Fellowship of the Ring</option>
+            <option value="The Maze Runner">The Maze Runner</option>
+            <option value="The Matrix">The Matrix</option>
+            <option value="The Princess Diaries">The Princess Diaries</option>
+            <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+            <option value="The Silence of the Lambs">The Silence of the Lambs</option>
+            <option value="The Social Network">The Social Network</option>
+            <option value="The Sound of Music">The Sound of Music</option>
+            <option value="The Suicide Squad">The Suicide Squad</option>
+            <option value="The Twilight Saga: Breaking Dawn - Part 2">The Twilight Saga: Breaking Dawn - Part 2</option>
+            <option value="The Wolf of Wall Street">The Wolf of Wall Street</option>
+            <option value="Titanic">Titanic</option>
+            <option value="To All The Boys I Loved Before">To All The Boys I Loved Before</option>
+            <option value="Toy Story">Toy Story</option>
+            <option value="Up">Up</option>
+            <option value="X-Men: Days of Future Past">X-Men: Days of Future Past</option>
            </select>
 
            <br><br>
-           <input type="submit" value="Submit">
+
+           <!-- Submit Button -->
+           <button type="button" id="submitBtn">Get Recommendations</button>
          </form>
+         
+         <!-- Area to display movie recommendations -->
+         <div id="recommendations"></div>
+         
        </div>
+
      </div>
+
+     <!-- credits -->
+    <hr id = "line">
+    <p class = "credits">Made By: Isabela Magnoni PHS '25, Mishelle Munkhbat NWHS '26, Navya Rachakonda NWHS '27, and Gabrielle Sutherland CCBC '25</p>
+
    </div>
+   <script src="app.js"></script>
  </body>
 </html>

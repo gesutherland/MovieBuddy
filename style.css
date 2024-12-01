@@ -113,3 +113,53 @@ button:hover {
    text-align: center;
    color: #297373; /* Label text color */
 }
+
+#recommendations {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  #recommendations h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  #recommendations ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #recommendations li {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+  .movie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .movie img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .movie h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .movie p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
