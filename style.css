@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/black-chancery');
+
+/* Global Styling */
+html {
+   background-color: #F7B2BD; /* Background color */
+   font-family: 'Times New Roman', Times, serif; /* Font family */
+   color: #297373; /* Text color */
+}
+
+/* Header Styling */
+h1 {
+   text-align: center;
+   font-family: 'BlackChancery', sans-serif; /* Custom font */
+   font-size: 3em;
+   color: #297373; /* Header text color */
+}
+
+/* Horizontal Line Styling */
+hr {
+   display: block;
+   height: 1px;
+   border: 0;
+   border-top: 1px solid #297373; /* Line color */
+   margin: 1em 0;
+   padding: 0;
+}
+
+/* Credits Section */
+.credits {
+   text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+   color: black;
+}
+
+/* Sign In Section */
+#signIn {
+   color: grey; /* Sign-in text color */
+}
+
+/* Dropdown Menu Styling */
+select {
+   padding: 10px;
+   font-size: 16px;
+   width: 200px;
+   border: 2px solid #297373; /* Border color */
+   border-radius: 5px;
+   background-color: #f0f8ff; /* Light background */
+   color: #333; /* Text color */
+   appearance: none; /* Remove default dropdown styling in some browsers */
+   cursor: pointer;
+}
+
+/* Dropdown Options Styling */
+select option {
+   background-color: #ffffff; /* Option background */
+   color: #333; /* Option text color */
+   padding: 10px;
+}
+
+/* Custom Arrow for Dropdown */
+select::-ms-expand {
+   display: none; /* Hide default arrow in IE */
+}
+
+.dropdown-container {
+   position: relative;
+   display: inline-block;
+}
+
+/* Custom Arrow Icon */
+.dropdown-container::after {
+   content: "▼";
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   pointer-events: none;
+   color: #297373;
+   font-size: 18px;
+}
+
+/* Button Styling */
+button {
+   padding: 10px 20px;
+   font-size: 16px;
+   width: 200px;
+   border: 2px solid #297373; /* Border color */
+   border-radius: 5px;
+   background-color: #ffffff; /* Button background */
+   color: #333; /* Text color */
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+/* Button Hover Effect */
+button:hover {
+   background-color: #297373; /* Button background on hover */
+   color: white; /* Text color on hover */
+}
+
+/* Centered Select Movie and Submit Buttons */
+.selectLikedMovie, .nextSubmitButton {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Label Styling */
+.label {
+   text-align: center;
+   color: #297373; /* Label text color */
+}
